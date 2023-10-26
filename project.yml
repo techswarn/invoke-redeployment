@@ -1,0 +1,20 @@
+parameters: {}
+environment: {}
+packages:
+  - name: app
+    shared: false
+    environment:
+      TOKEN: ${TOKEN}
+    parameters: {}
+    annotations: {}
+    functions:
+      - name: redeploy
+        binary: false
+        main: ""
+        runtime: nodejs:default
+        web: true
+        webSecure: false
+        parameters: {}
+        environment: {}
+        annotations: {}
+        limits: {}
