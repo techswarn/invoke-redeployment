@@ -13,7 +13,6 @@ packages:
         main: ""
         runtime: nodejs:default
         web: true
-        webSecure: false
         parameters: {}
         environment: {}
         annotations: {}
