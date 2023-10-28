@@ -7,6 +7,10 @@ packages:
         runtime: nodejs:default
         limits:
           timeout: 5000
+      - name: getdeploy
+        runtime: nodejs:default
+        limits:
+          timeout: 5000
 # environment:
 #   TOKEN: ${TOKEN}
 # packages:
