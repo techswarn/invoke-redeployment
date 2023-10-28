@@ -2,16 +2,25 @@ environment:
   TOKEN: ${TOKEN}
 packages:
   - name: app
-    shared: false
-    parameters: {}
-    annotations: {}
-    functions:
+    actions:
       - name: redeploy
-        binary: false
-        main: ""
         runtime: nodejs:default
-        web: true
-        parameters: {}
-        environment: {}
-        annotations: {}
-        limits: {}
+        limits:
+          timeout: 5000
+# environment:
+#   TOKEN: ${TOKEN}
+# packages:
+#   - name: app
+#     shared: false
+#     parameters: {}
+#     annotations: {}
+#     functions:
+#       - name: redeploy
+#         binary: false
+#         main: ""
+#         runtime: nodejs:default
+#         web: true
+#         parameters: {}
+#         environment: {}
+#         annotations: {}
+#         limits: {}
