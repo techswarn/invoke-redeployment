@@ -1,10 +1,8 @@
-parameters: {}
-environment: {}
+environment:
+  TOKEN: ${TOKEN}
 packages:
   - name: app
     shared: false
-    environment:
-      TOKEN: ${TOKEN}
     parameters: {}
     annotations: {}
     functions:
