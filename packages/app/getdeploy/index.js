@@ -2,6 +2,7 @@ const dotenv = require("dotenv");
 dotenv.config({ path: "./config.env" });
 const fetch = require("node-fetch");
 async function main(event, context) {
+  console.log("Log of event and context");
   console.log(event);
   console.log(context);
 
